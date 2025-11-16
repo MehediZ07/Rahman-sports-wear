@@ -2,14 +2,14 @@ import React from "react";
 
 export const AboutSection = (): JSX.Element => {
   return (
-    <section className="py-20 bg-gray-100">
-      <div className="container mx-auto px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-8 md:py-12 lg:py-20 bg-gray-100">
+      <div className="container mx-auto px-4 md:px-8 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-[#cf181f] mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-4 md:mb-6 lg:mb-8">
               RAHMAN SPORT WEAR LTD.
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
               As a 100% export oriented factory, Rahman Sport Wear Ltd. has
               established itself as a capable and competitive player in the RMG world.
               Commencing operations in 2008, it has grown to accommodate over 1000
@@ -22,7 +22,7 @@ export const AboutSection = (): JSX.Element => {
           </div>
           <div>
             <img
-              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[250px] md:h-[300px] lg:h-[400px] object-cover rounded-lg shadow-lg"
               alt="Factory Building"
               src="/rectangle-2.png"
             />

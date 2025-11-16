@@ -53,8 +53,21 @@ npm run build
 
 ```
 src/
-├── components/ui/     # Reusable UI components
-├── screens/Desktop/   # Main page component
-├── lib/              # Utility functions
-└── index.tsx         # App entry point
+├── components/
+│   ├── ui/              # Existing UI components
+│   └── sections/        # NEW: Section components
+│       ├── Header.tsx
+│       ├── Navigation.tsx
+│       ├── HeroSection.tsx
+│       ├── AboutSection.tsx
+│       ├── FactoryOverview.tsx
+│       ├── MachinerySection.tsx
+│       ├── CertificationsSection.tsx
+│       ├── ContactSection.tsx
+│       ├── Footer.tsx
+│       └── index.ts     # Exports all components
+├── screens/Desktop/
+│   └── Desktop.tsx      # Now clean and minimal
+├── lib/                 # Utility functions
+└── index.tsx           # App entry point
 ```
