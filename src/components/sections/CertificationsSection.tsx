@@ -14,8 +14,8 @@ const turnoverColumns = [
 ];
 
 const turnoverData = [
-  { year: "2022-2023", amount: "17.26", highlighted: true },
-  { year: "2021-2022", amount: "10.29" },
+  { year: "2022-2023", amount: "17.26" },
+  { year: "2021-2022", amount: "10.29", highlighted: true },
   { year: "2020-2021", amount: "21.40" },
 ];
 
@@ -31,10 +31,10 @@ export const CertificationsSection = (): JSX.Element => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-start">
           
-          {/* Left side - Certifications */}
-          <div className="text-center lg:text-left">
+          {/* Left side - Certifications (60%) */}
+          <div className="lg:col-span-3 text-center lg:text-left">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-6 md:mb-8">
               CERTIFICATIONS
             </h3>
@@ -62,10 +62,10 @@ export const CertificationsSection = (): JSX.Element => {
             </div>
           </div>
           
-          {/* Right side - Factory Image */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Right side - Factory Image (40%) */}
+          <div className="lg:col-span-2 flex justify-center">
             <img
-              className="w-full max-w-[500px] h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
               alt="Factory Production"
               src="/rectangle-18.png"
             />

@@ -5,6 +5,7 @@ export const AboutSection = (): JSX.Element => {
     <section className="py-8 md:py-12 lg:py-20">
       <div className="container px-4 mx-auto md:px-8 lg:px-20">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 md:gap-12 lg:gap-16">
+          {/* Left side - Content (50%) */}
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-4 md:mb-6 lg:mb-8">
               RAHMAN SPORT WEAR LTD.
@@ -18,6 +19,8 @@ export const AboutSection = (): JSX.Element => {
               RMG sector in the years ahead.
             </p>
           </div>
+          
+          {/* Right side - Image (50%) */}
           <div>
             <img
               className="w-full h-[250px] md:h-[300px] lg:h-[400px] object-cover rounded-lg shadow-lg"

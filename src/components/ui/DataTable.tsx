@@ -16,6 +16,7 @@ interface DataTableProps {
   data: TableRow[];
   totalRow?: TableRow;
   className?: string;
+  rowHeight?: 'compact' | 'normal' | 'large';
 }
 
 export const DataTable: React.FC<DataTableProps> = ({
@@ -23,7 +24,15 @@ export const DataTable: React.FC<DataTableProps> = ({
   data,
   totalRow,
   className = "",
+  rowHeight = 'normal',
 }) => {
+  const getRowPadding = () => {
+    switch (rowHeight) {
+      case 'compact': return 'py-1';
+      case 'large': return 'py-4';
+      default: return 'py-2';
+    }
+  };
   return (
     <div className={`w-full overflow-x-auto ${className}`}>
       <table className="w-full border-collapse bg-white shadow-sm">
@@ -33,7 +42,7 @@ export const DataTable: React.FC<DataTableProps> = ({
             {columns.map((column) => (
               <th
                 key={column.key}
-                className={`px-4 py-3 text-left font-semibold text-gray-800 text-sm md:text-base border border-gray-400 ${
+                className={`px-4 ${getRowPadding()} text-left font-semibold text-gray-800 text-sm md:text-base border border-gray-400 ${
                   column.width || ""
                 }`}
               >
@@ -52,16 +61,16 @@ export const DataTable: React.FC<DataTableProps> = ({
                 index % 2 === 0 ? "bg-white" : "bg-gray-100"
               } hover:bg-gray-50 transition-colors relative`}
             >
-              {/* Red highlight bar for highlighted rows */}
-              {row.highlighted && (
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#cf181f]" />
-              )}
+
               
               {columns.map((column) => (
                 <td
                   key={column.key}
-                  className="px-4 py-3 text-sm md:text-base text-gray-700 border border-gray-300"
+                  className={`px-4 ${getRowPadding()} text-sm md:text-base text-gray-700 border border-gray-300 relative`}
                 >
+                  {row.highlighted && column.key === columns[0].key && (
+                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#cf181f]" />
+                  )}
                   {row[column.key]}
                 </td>
               ))}
@@ -74,7 +83,7 @@ export const DataTable: React.FC<DataTableProps> = ({
               {columns.map((column) => (
                 <td
                   key={column.key}
-                  className="px-4 py-3 text-sm md:text-base text-gray-800 border border-gray-400"
+                  className={`px-4 ${getRowPadding()} text-sm md:text-base text-gray-800 border border-gray-400`}
                 >
                   {totalRow[column.key]}
                 </td>

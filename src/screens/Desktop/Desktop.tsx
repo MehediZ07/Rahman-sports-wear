@@ -5,8 +5,12 @@ import {
   HeroSection,
   AboutSection,
   FactoryOverview,
-  ProductionCapacitySection,
-  MachinerySection,
+  SewingMachinerySection,
+  CuttingMachinerySection,
+  KnittingMachinerySection,
+  DyeingMachinerySection,
+  FinishingMachinerySection,
+  UtilityMachinerySection,
   ETPSection,
   LabSection,
   CertificationsSection,
@@ -16,7 +20,7 @@ import {
 
 export const Desktop = (): JSX.Element => {
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="relative w-full min-h-screen">
       {/* Background Image */}
       <img
         className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
@@ -29,8 +33,12 @@ export const Desktop = (): JSX.Element => {
       <HeroSection />
       <AboutSection />
       <FactoryOverview />
-      <ProductionCapacitySection />
-      <MachinerySection />
+      <SewingMachinerySection />
+      <CuttingMachinerySection />
+      <KnittingMachinerySection />
+      <DyeingMachinerySection />
+      <FinishingMachinerySection />
+      <UtilityMachinerySection />
       <ETPSection />
       <LabSection />
       <CertificationsSection />
