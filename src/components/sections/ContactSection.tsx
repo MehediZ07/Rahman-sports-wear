@@ -60,10 +60,9 @@ export const ContactSection = (): JSX.Element => {
                 <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-1 md:mb-2">
                   Office & Garments Unit
                 </h4>
-                <p className="text-sm md:text-base lg:text-xl text-gray-700">
-                  Plot B-369,370,371,<br/>
-                  BSCIC I/E, Shasongaon,Fatullah<br/>
-                  Narayanganj-1420, Bangladesh.
+                <p className="text-sm md:text-base lg:text-lg text-gray-700">
+                  Plot B-369,370,371, BSCIC I/E,<br/>
+                  Shasongaon, Fatullah, Narayanganj-1420, Bangladesh.
                 </p>
               </div>
               
@@ -71,9 +70,20 @@ export const ContactSection = (): JSX.Element => {
                 <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-1 md:mb-2">
                   Knitting & Dyeing Unit
                 </h4>
-                <p className="text-sm md:text-base lg:text-xl text-gray-700">
-                  Purbo Keodhala, Madanpur<br/>
-                  Bandar, Narayanganj.
+                <p className="text-sm md:text-base lg:text-lg text-gray-700">
+                  Purbo Keodhala,<br/>
+                  Madanpur, Bandar, Narayanganj.
+                </p>
+              </div>
+              
+              <div>
+                <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-1 md:mb-2">
+                  Contact Person
+                </h4>
+                <p className="text-sm md:text-base lg:text-lg text-gray-700">
+                  <span className="font-semibold">Ashiqur Rahman</span><br/>
+                  Managing Director<br/>
+                  rsw@dhaka.net
                 </p>
               </div>
             </div>
@@ -89,10 +99,13 @@ export const ContactSection = (): JSX.Element => {
               src="/4092561-envelope-mail-mobile-ui-message-email-icon-1.svg"
             />
           </div>
-          <div className="text-sm md:text-lg lg:text-2xl text-gray-700 space-y-1 md:space-y-2">
+          <div className="text-sm md:text-lg lg:text-xl text-gray-700 space-y-1 md:space-y-2">
             <div>rsw@dhaka.net</div>
             <div>+880-2-997746612 +880-2-997746913</div>
             <div>rahmansportswear@gmail.com</div>
+            <div className="mt-4 text-base md:text-lg font-medium">
+              www.rahmansportswear.com
+            </div>
           </div>
         </div>
       </div>
