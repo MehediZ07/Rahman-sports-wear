@@ -1,5 +1,6 @@
 import React from "react";
 import { DataTable } from "../ui/DataTable";
+import { motion } from "framer-motion";
 
 const labMachineryColumns = [
   { key: "slNo", header: "SL. NO", width: "w-16" },
@@ -25,7 +26,12 @@ export const LabSection = (): JSX.Element => {
     <section className="py-8 md:py-12 lg:py-20">
       <div className="container px-4 mx-auto md:px-8 lg:px-20">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 md:gap-12 lg:gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="mb-6 text-xl font-bold text-gray-800 md:text-2xl lg:text-3xl">
               MACHINERIES OF LAB
             </h2>
@@ -33,14 +39,19 @@ export const LabSection = (): JSX.Element => {
               columns={labMachineryColumns}
               data={labMachineryData}
             />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
             <img
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
               alt="Lab Equipment"
               src="/rectangle-25.png"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

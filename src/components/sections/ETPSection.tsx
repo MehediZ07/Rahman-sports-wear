@@ -1,5 +1,6 @@
 import React from "react";
 import { DataTable } from "../ui/DataTable";
+import { SlideInLeft, SlideInRight } from "../ui/AnimatedSection";
 
 const etpColumns = [
   { key: "slNo", header: "SL. NO", width: "w-16" },
@@ -17,14 +18,14 @@ export const ETPSection = (): JSX.Element => {
     <section className="py-8 md:py-12 lg:py-20">
       <div className="container px-4 mx-auto md:px-8 lg:px-20">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 md:gap-12 lg:gap-16">
-          <div>
+          <SlideInLeft>
             <img
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
               alt="ETP Control Room"
               src="/rectangle-26.png"
             />
-          </div>
-          <div>
+          </SlideInLeft>
+          <SlideInRight delay={0.2}>
             <h2 className="mb-6 text-xl font-bold text-gray-800 md:text-2xl lg:text-3xl">
               DESCRIPTION OF ETP
             </h2>
@@ -46,7 +47,7 @@ export const ETPSection = (): JSX.Element => {
                 <div>Total flow: 1800 m3/day.</div>
               </div>
             </div>
-          </div>
+          </SlideInRight>
         </div>
       </div>
     </section>

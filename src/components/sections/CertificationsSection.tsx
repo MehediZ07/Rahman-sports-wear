@@ -1,5 +1,6 @@
 import React from "react";
 import { DataTable } from "../ui/DataTable";
+import { FadeInUp, SlideInLeft, SlideInRight } from "../ui/AnimatedSection";
 
 const certificationLogos = [
   { src: "/isolation-mode-1.svg", className: "w-[220px] h-[78px]" },
@@ -25,16 +26,18 @@ export const CertificationsSection = (): JSX.Element => {
       <div className="container mx-auto px-4 md:px-8 lg:px-20">
         
         {/* Business Registration */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-gray-800 mb-2 md:mb-3 lg:mb-4">
-            BUSINESS REGISTRATION NO. <span className="text-[#cf181f]">003809235-0204</span>
-          </h2>
-        </div>
+        <FadeInUp>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-lg md:text-2xl lg:text-4xl font-bold text-gray-800 mb-2 md:mb-3 lg:mb-4">
+              BUSINESS REGISTRATION NO. <span className="text-[#cf181f]">003809235-0204</span>
+            </h2>
+          </div>
+        </FadeInUp>
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16 items-start">
           
           {/* Left side - Certifications (60%) */}
-          <div className="lg:col-span-3 text-center lg:text-left">
+          <SlideInLeft className="lg:col-span-3 text-center lg:text-left">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-6 md:mb-8">
               CERTIFICATIONS
             </h3>
@@ -60,30 +63,32 @@ export const CertificationsSection = (): JSX.Element => {
                 <DataTable columns={turnoverColumns} data={turnoverData} />
               </div>
             </div>
-          </div>
+          </SlideInLeft>
           
           {/* Right side - Factory Image (40%) */}
-          <div className="lg:col-span-2 flex justify-center">
+          <SlideInRight delay={0.2} className="lg:col-span-2 flex justify-center">
             <img
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-lg"
               alt="Factory Production"
               src="/rectangle-18.png"
             />
-          </div>
+          </SlideInRight>
         </div>
         
         {/* Memberships */}
-        <div className="text-center mt-12 md:mt-16">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-6 md:mb-8">
-            MEMBERSHIPS
-          </h3>
-          <div className="text-sm md:text-lg lg:text-xl text-gray-700 space-y-2 md:space-y-3 max-w-4xl mx-auto">
-            <div>• Bangladesh Knitwear Manufacturers & Exporters Association (BKMEA).</div>
-            <div>• Bangladesh Garment Manufacturers & Exporters Association (BGMEA).</div>
-            <div>• Export Promotion Bureau Bangladesh (EPB).</div>
-            <div>• Narayanganj Chamber of Commerce & Industries (NCCI).</div>
+        <FadeInUp delay={0.4}>
+          <div className="text-center mt-12 md:mt-16">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cf181f] mb-6 md:mb-8">
+              MEMBERSHIPS
+            </h3>
+            <div className="text-sm md:text-lg lg:text-xl text-gray-700 space-y-2 md:space-y-3 max-w-4xl mx-auto">
+              <div>• Bangladesh Knitwear Manufacturers & Exporters Association (BKMEA).</div>
+              <div>• Bangladesh Garment Manufacturers & Exporters Association (BGMEA).</div>
+              <div>• Export Promotion Bureau Bangladesh (EPB).</div>
+              <div>• Narayanganj Chamber of Commerce & Industries (NCCI).</div>
+            </div>
           </div>
-        </div>
+        </FadeInUp>
       </div>
     </section>
   );

@@ -3,8 +3,6 @@ export { Navigation } from './Navigation';
 export { HeroSection } from './HeroSection';
 export { AboutSection } from './AboutSection';
 export { FactoryOverview } from './FactoryOverview';
-export { ProductionCapacitySection } from './ProductionCapacitySection';
-export { BankingSection } from './BankingSection';
 export { SewingMachinerySection } from './SewingMachinerySection';
 export { CuttingMachinerySection } from './CuttingMachinerySection';
 export { KnittingMachinerySection } from './KnittingMachinerySection';
