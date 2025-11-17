@@ -2,6 +2,10 @@
 
 A modern, responsive company portfolio website built with React, TypeScript, and Tailwind CSS featuring smooth scroll animations, professional design, and industry-standard optimizations.
 
+## 🌐 Live Website
+
+**Production URL**: https://rahmansportswear.surge.sh
+
 ## ✨ Features
 
 ### 🎨 Design & UX
@@ -37,10 +41,6 @@ A modern, responsive company portfolio website built with React, TypeScript, and
 - **React Headroom** - Auto-hide navigation component
 - **React Scroll To Top** - Smooth scroll-to-top functionality
 - **Shadcn UI** - High-quality UI components
-
-## 🌐 Live Website
-
-**Production URL**: https://rahmansportswear.surge.sh
 
 ## 📦 Getting Started
 
