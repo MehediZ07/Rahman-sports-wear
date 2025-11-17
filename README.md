@@ -1,36 +1,38 @@
 # Rahman Sport Wear Ltd. - Company Website
 
-A modern, responsive company portfolio website built with React, TypeScript, and Tailwind CSS featuring smooth scroll animations and professional design.
+A modern, responsive company portfolio website built with React, TypeScript, and Tailwind CSS featuring smooth scroll animations, professional design, and industry-standard optimizations.
 
 ## ✨ Features
 
 ### 🎨 Design & UX
-- **Modern responsive design** - Mobile-first approach with Tailwind CSS
+- **Fully responsive design** - Optimized for mobile, tablet, and desktop
 - **Smooth scroll animations** - Framer Motion powered animations
 - **Auto-hide navigation** - React Headroom for smart navbar behavior
 - **Professional layout** - Clean, corporate design aesthetic
 - **Interactive elements** - Hover effects and micro-interactions
+- **Enhanced mobile experience** - Improved text scaling and layout
 
 ### 📊 Content Sections
 - **Company profile** - Establishment year, employees, production capacity
-- **Machinery showcase** - Detailed tables for all manufacturing equipment
-- **Factory overview** - Production statistics and capabilities
+- **Machinery showcase** - Detailed responsive tables for all manufacturing equipment
+- **Factory overview** - Production statistics with adaptive text layout
 - **Certifications** - Business registration and industry certifications
 - **Contact information** - Multiple contact methods and addresses
 
 ### 🛠️ Technical Features
 - **Functional navigation** - Smooth scroll to sections
 - **Scroll to top** - Gradient button with hover effects
-- **Data tables** - Responsive machinery and equipment listings
+- **Responsive data tables** - Mobile-optimized machinery and equipment listings
 - **Animation variety** - Slide, fade, scale, and stagger effects
 - **Performance optimized** - Lightweight animations and efficient rendering
+- **SEO enhanced** - Comprehensive meta tags and structured data
 
 ## 🚀 Tech Stack
 
 - **React 18** - Modern UI library with hooks
 - **TypeScript** - Type safety and better developer experience
 - **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework
+- **Tailwind CSS** - Utility-first CSS framework with custom breakpoints
 - **Framer Motion** - Production-ready motion library
 - **React Headroom** - Auto-hide navigation component
 - **React Scroll To Top** - Smooth scroll-to-top functionality
@@ -125,13 +127,29 @@ src/
 - **Once-only animations** - No re-triggering on scroll back
 - **Optimized timing** - Balanced duration and delays
 
+## 🔍 SEO & Performance
+
+### SEO Optimization
+- **Comprehensive meta tags** - Title, description, keywords
+- **Open Graph tags** - Social media optimization
+- **Twitter Cards** - Enhanced Twitter sharing
+- **Structured data** - JSON-LD schema for search engines
+- **Security headers** - CSP, X-Frame-Options, and more
+
+### Performance Features
+- **Optimized images** - Proper alt tags and loading
+- **Efficient animations** - Hardware-accelerated transforms
+- **Clean code structure** - TypeScript for better maintainability
+- **Responsive tables** - Mobile-optimized data display
+
 ## 📱 Responsive Design
 
 - **Mobile-first** - Designed for mobile, enhanced for desktop
-- **Breakpoints** - sm, md, lg, xl responsive breakpoints
+- **Enhanced breakpoints** - xs (475px), sm, md, lg, xl, 2xl responsive breakpoints
 - **Flexible layouts** - CSS Grid and Flexbox
-- **Scalable typography** - Responsive text sizing
+- **Adaptive typography** - Granular responsive text sizing with proper scaling
 - **Touch-friendly** - Optimized for touch interactions
+- **Improved mobile UX** - Better text wrapping and layout on small screens
 
 ## 🏭 Company Information
 
@@ -142,6 +160,19 @@ src/
 - **Employees**: 1,038 across various departments
 - **Facilities**: 18 sewing lines, comprehensive manufacturing setup
 - **Certifications**: BKMEA, BGMEA, EPB memberships
+
+## 🚀 Recent Improvements
+
+### Mobile & Tablet Optimization
+- **Enhanced responsive text** - Better scaling across all device sizes
+- **Improved Factory Overview** - Adaptive text layout for different screen sizes
+- **Fixed data table types** - Resolved TypeScript interface issues
+- **Better breakpoint management** - Added xs breakpoint for fine-tuned control
+
+### Code Quality
+- **TypeScript improvements** - Better type safety and interface definitions
+- **SEO enhancements** - Comprehensive meta tags and structured data
+- **Performance optimizations** - Efficient rendering and animations
 
 ## 📄 License
 
