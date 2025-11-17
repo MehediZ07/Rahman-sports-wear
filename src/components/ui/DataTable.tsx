@@ -7,7 +7,7 @@ interface TableColumn {
 }
 
 interface TableRow {
-  [key: string]: string | number;
+  [key: string]: string | number | boolean | undefined;
   highlighted?: boolean;
 }
 
