@@ -5,7 +5,9 @@
   "description": "Rahman Sport Wear Ltd. company website built with React, TypeScript, and Tailwind CSS",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && copy public\\CNAME dist\\CNAME && surge dist rahmansportswear.surge.sh"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",

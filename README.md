@@ -38,6 +38,10 @@ A modern, responsive company portfolio website built with React, TypeScript, and
 - **React Scroll To Top** - Smooth scroll-to-top functionality
 - **Shadcn UI** - High-quality UI components
 
+## 🌐 Live Website
+
+**Production URL**: https://rahmansportswear.surge.sh
+
 ## 📦 Getting Started
 
 ### Prerequisites
@@ -70,6 +74,12 @@ npm run dev
 ```bash
 npm run build
 npm run preview  # Preview production build
+```
+
+### Deployment
+
+```bash
+npm run deploy  # Build and deploy to Surge.sh
 ```
 
 ## 📁 Project Structure
@@ -173,6 +183,20 @@ src/
 - **TypeScript improvements** - Better type safety and interface definitions
 - **SEO enhancements** - Comprehensive meta tags and structured data
 - **Performance optimizations** - Efficient rendering and animations
+
+### Deployment
+- **Live on Surge.sh** - Deployed at rahmansportswear.surge.sh
+- **Global CDN** - Fast loading worldwide with 10+ server locations
+- **SSL Certificate** - Secure HTTPS connection
+- **Automated deployment** - One-command deployment script
+
+## 🌍 Deployment Details
+
+- **Platform**: Surge.sh
+- **Domain**: rahmansportswear.surge.sh
+- **SSL**: Valid certificate with 200+ days remaining
+- **CDN Locations**: San Francisco, London, Toronto, New York, Amsterdam, Frankfurt, Singapore, Bangalore, Sydney, Tokyo
+- **Size**: 22 files, optimized for fast loading
 
 ## 📄 License
 
